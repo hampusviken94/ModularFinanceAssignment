@@ -13,7 +13,7 @@ triggers: \n\
   - '**/*.go' \n\
   env: \n\
     DEBUG: '1' \n\
-  cmd: go run /go/src/hub/*.go \n\
+  cmd: go run /go/src/hub/main.go \n\
   shell: true \n\
   delay: 100ms \n\
   stop_timeout: 500ms \n\

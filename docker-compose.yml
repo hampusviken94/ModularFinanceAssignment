@@ -12,10 +12,11 @@ services:
     environment:
       - HOSTNAME=web-sub-client
       - PORT=8080
-      - HUB_URL=http://hub:8080
+      - HUB_URL=http://hub:8080/subscribe
       - TOPIC=/a/topic
 
   hub:
+    hostname: hub
     build:
       context: ./hub
     ports:
